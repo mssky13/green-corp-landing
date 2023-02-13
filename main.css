@@ -1,30 +1,30 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #213053;
-    margin: 0;
-  }
+  font-family: 'Raleway', sans-serif;
+  color: #213053;
+  margin: 0;
+}
    
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: sticky;
-    background: #fff;
-    top: 0;
-    z-index: 1;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 1;
+}
 
  .header__logo {
     height: 30px;
   }
 
- a {
-    text-decoration: none;
-    color: #213053;
-  }
+a {
+  text-decoration: none;
+  color: #213053;
+}
 
-header a {
+ header a {
     font-size: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -33,16 +33,16 @@ header a {
   }
 
 button {
-    font-family: 'Raleway', sans—serif;
-    font-size: 15px;
-    color: #fff;
-    background-color: #23a030;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
-    padding: 15px; 
-  }
+  font-family: 'Raleway', sans—serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #23a030;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+  padding: 15px; 
+}
 
   .about__image {
     width: 500px;
@@ -68,39 +68,39 @@ button {
 
   .about {
     position: relative;
- }
+  }
 
-.orb-canvas {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-}
+  .orb-canvas {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
 
-.about h1 {
+  .about h1 {
     font-size: 70px;
     line-height: 76px;
   }
 
-.about p {
+  .about p {
     font-size: 18px;
     line-height: 30px;
     opacity: 0.8;
-}
+  }
 
-.about button {
+  .about button {
     font-size: 18px;
     padding: 20px 25px;
     border-radius: 20px;
     margin-top: 20px;
-}
+  }
 
-.about__info {
+  .about__info {
     max-width: 550px;
   }
 
-  .form__container {
+.form__container {
     width: 550px;
   }
 
@@ -111,6 +111,7 @@ button {
     padding-bottom: 115px;
     text-align: center;
     display: flex;
+    justify-content: center;
   }
 
   .form h1 {
@@ -136,64 +137,65 @@ button {
 
   .form label{
     font-size: 18px;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 15px;
   }
 
-  .form input{
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0 0 20px 20px;
-    border-radius: 15px;
+  .form input, .form select {
     border: none;
-  }
-
-  .form select{
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0 0 20px 20px;
     border-radius: 15px;
-    border: none;
-  }
-
-  .form__submit {
-    font-size: 18px;
-    font-weight: 600px;
-    margin-top: 40px;
-  }
-
-  select {
-    appearance: none;
-  }
-
-  input {
+    padding: 0 20px;
     outline: none;
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+ }
+
+ .form__submit {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+select {
+  appearance: none;
   }
 
-  button:hover{
-    background-color: #f6980c;
-    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-    transition:  background-color 0.3s;
+input {
+  outline: none;
   }
 
-  .ease {
-    transition: margin-right 1s ease;
+button:hover{
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition:  background-color 0.3s ease-in;
   }
 
-  .footer {
-    padding-bottom: 90px;
-    padding-top: 90px;
-    padding-left:20px;
-    padding-right: 20px;
-    font-size: 16px;
-    font-weight: 600px;
+/*
+.ease {
+  transition: margin-right 1s ease;
+  }
+*/
+
+.footer {
+  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-left:20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
 
   }
 
 .footer__container{
   display: flex;
+  justify-content: center;
+}
+
+.footer__copy {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 40px;
 }
 
 .footer__copyright{
@@ -203,22 +205,21 @@ button {
 }
 
 .footer__group {
-  padding-right: 80px;
+  margin-right: 80px;
 }
 
-.about h3 {
-  font-size: 16px;
+footer h3 {
   opacity: 0.7;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
-.footer__links{
+.footer__links {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
-.a {
+.footer__links a {
   margin-bottom: 15px;
 }
 
