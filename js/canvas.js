@@ -85,19 +85,12 @@ class CanvasBackground {
             this.ctx.translate(bubble.translateX, bubble.translateY);
             this.ctx.beginPath();
             this.ctx.arc(0, 0, bubble.size, 0, 2 * Math.PI);
-            this.ctx.fillStyle = "rgba(" + COLORS[bubble.color] + "," + bubble.alpha + ")";
+            this.ctx.fillStyle = "rgba(" + bubble.color + "," + bubble.alpha + ")";
             this.ctx.fill();
             this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);  
         });
 
         requestAnimationFrame(this.animate.bind(this));
-    }
-
-    generateBubbles() {
-        this.bubblesList = [];
-        for (let i = 0; i < BUBBLE_DENSITY; i++) {
-            this.bubblesList.push(new Bubble(this.canvas))
-        }
     }
 }
 
